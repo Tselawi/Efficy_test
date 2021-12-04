@@ -1,0 +1,20 @@
+<h1 align="center">Welcome to efficytest 👋</h1>
+
+### 🏠 [SQL test]
+1. `SELECT COUNT(*) from COMPANIES WHERE (CITY = 'Brussels' OR CITY = 'Bangkok') AND NAME LIKE '%.com';`
+2. `SELECT TOP (5) CITY , COUNT(CITY) FROM COMPANIES GROUP BY CITY ORDER BY COUNT(CITY) DESC;`
+3. `SELECT DISTINCT FIRSTNAME, CONTACTS.NAME, COMPANIES.NAME FROM CONTACTS, COMPANIES WHERE K_CONTACT =1;`
+4. `SELECT COMPANIES.NAME, CONTACTS.NAME FROM CONT_COMP 
+JOIN COMPANIES ON CONT_COMP.K_COMPANY = COMPANIES.K_COMPANY  
+JOIN CONTACTS ON CONT_COMP.K_CONTACT = CONTACTS.K_CONTACT 
+ORDER BY COMPANIES.NAME ASC,CONTACTS.NAME DESC;`
+5. `SELECT COUNT(*) FROM CONTACTS JOIN CONT_COMP ON CONT_COMP.K_COMPANY = CONTACTS.K_CONTACT;`
+
+### 🏠 [javascript test](https://github.com/Tselawi/Efficy_test#readme)
+
+## Author
+
+👤 **Tariq**
+
+* Website: https://selawi-portfolio.netlify.app/
+* Github: [@tselawi](https://github.com/tselawi)
